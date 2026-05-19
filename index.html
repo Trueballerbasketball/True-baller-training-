@@ -22,7 +22,7 @@
         /* Top Logo & Navigation Header - Sticky */
         .top-header {
             background-color: #000;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
             border-bottom: 3px solid #f57c00;
             position: sticky;
@@ -30,7 +30,12 @@
             z-index: 1000;
         }
 
-        .main-logo { height: 60px; width: auto; margin-bottom: 10px; }
+        .main-logo { height: 100px; width: auto; margin-bottom: 10px; }
+
+        /* Responsive adjustments to keep logo prominent but well-proportioned on mobile */
+        @media (max-width: 768px) {
+            .main-logo { height: 85px; }
+        }
 
         nav { display: flex; justify-content: center; gap: 20px; padding-bottom: 10px; }
         nav a {
@@ -280,7 +285,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 True Baller Training. All Rights Reserved.</p>
+        <p>&copy; 2026 True Baller. All Rights Reserved.</p>
         <p>
             <span class="legal-link" onclick="openModal('privacyModal')">Privacy Policy</span> | 
             <span class="legal-link" onclick="openModal('termsModal')">Terms & Conditions</span>
@@ -319,5 +324,4 @@
     </script>
 
 </body>
-                </html>
-                
+</html>
